@@ -1,0 +1,120 @@
+@charset "UTF-8";
+#main{
+	position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 500px;
+   height: 500px;
+   margin-top: -250px; /* Half the height */
+   margin-left: -250px; 
+}
+#header {
+	font-size: 36px;
+	font-family: allura;
+	font-style: normal;
+	font-weight: 400;
+	color: #000000;
+	text-align: center;
+	width: 100%;
+	position: fixed;
+	background-color: #FFFFFF;
+	white-space: normal;
+	z-index: 10;
+	top: 0px;
+}
+#navbar {
+	font-family: arizonia;
+	font-size: 25px;
+	font-style: normal;
+	font-weight: 400;
+	text-align: center;
+	width: 100%;
+	position: fixed;
+	top: 150px;
+	word-spacing: normal;
+	white-space: normal;
+	z-index: 10;
+	background-color: #FFFFFF;
+}
+
+a:link {
+	color: #000000;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #8E5A5B;
+}
+a:hover {
+	text-decoration: none;
+	color: #383636;
+}
+a:active {
+	text-decoration: none;
+	color: #FB5659;
+}
+#content {
+	text-align:center;
+	position: absolute;
+	width: 100%;
+	top: 190px;
+}
+
+
+#thumbs {
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	left: 10px;
+	top: 750px;
+}
+a:table {
+	text-align:center;
+}
+#vertscroll {
+	text-align: center;
+	position: absolute;
+	width: 100%;
+	top: 125px;
+}
+#top {
+	background-color: #FFFFFF;
+	height: 50px;
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	z-index: 2;
+}
+
+#thumbwrap {
+	margin:50px;
+	width:252px; height:0px;
+}
+.thumb {
+	float:left; /* must be floated for same cross browser position of larger image */
+	position:relative;
+	margin:3px;
+}
+.thumb img { 
+	border:0px solid #000;
+	vertical-align:center;
+}
+.thumb:hover {
+	border:0; /* IE6 needs this to show large image */
+	z-index:1;
+}
+.thumb span { 
+	position:absolute;
+	visibility:hidden;
+	align:center;
+}
+.thumb:hover span { 
+	visibility:visible;
+	top:auto; 
+}
+
+div.hscroll {  
+overflow: scroll;
+height:100%; 
+top:200px;
+}
